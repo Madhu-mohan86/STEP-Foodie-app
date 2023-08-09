@@ -12,7 +12,7 @@ export default function Restaurantpage() {
     async function fetchAPI() {
       try {
         const response = await axios.get('https://mocki.io/v1/6aebdb48-272f-48cf-9d28-1d2a73a0ccd4');
-        setData(response.data); // Update state with the fetched data
+        setData(response.data);
       } catch (error) {
         console.error('Error fetching API:', error);
       }
